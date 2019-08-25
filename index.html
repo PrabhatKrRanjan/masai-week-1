@@ -1,46 +1,130 @@
 <html>
-<head>
-  <title >
-    Samurai Jack
-  </title>    
-</head>
+  <head>
+    <title>
+        Samurai Jack
+    </title>
+    <style>
+      .jackimg {
+        padding-left: 60px; 
+        padding-top: 60px;
+        height: 100px; 
+        width: 100px; 
+        background-repeat: no-repeat;
+      }
+
+      .bodyimg {
+        background: url(https://wallpaperplay.com/walls/full/f/1/5/2682.jpg); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+      }
+
+      .headimg {
+        background:url(https://wallpaperplay.com/walls/full/0/9/a/2639.jpg);
+        background-repeat: no-repeat; 
+        background-position: bottom;
+        height: 250px;
+      }
+
+ /* Text align center and position absolute */
+      .tacpsa {
+        text-align: center;
+        position: absolute;
+      }
+
+      .sam {
+        top: 35%;
+        left: 25%;
+        color:#ee0000;
+      }
+
+      .rating {
+        top: 62%;
+        left: 4%;
+        color:black;
+      }
+
+      .about {
+        top: 70%;
+        left: 40%;
+        color:black;
+      }
+
+      .para1 {
+        top: 75%;
+        left: 40%;
+        color: red;
+      }
+
+      .para2 {
+        top: 87%;left: 5%;
+        color:black;
+      } 
+
+      @media (max-width: 900px) {
+          .jackimg {
+              padding-left: 30px; 
+              padding-top: 40px; 
+              height: 80px; 
+              width: 70px; 
+            }
+
+          .sam {
+            top: 35%;left: 30%;color:#ee0000;
+           }
+
+           /* Text align center and position absolute */
+          .tacpsa {
+              text-align: center;
+              position: absolute;
+          }
+      }
+
+    </style>
+  </head>
     
- <body style="background: url(https://wallpaperplay.com/walls/full/f/1/5/2682.jpg); background-repeat: no-repeat; background-size: cover;">
-    <div style="background:url(https://wallpaperplay.com/walls/full/0/9/a/2639.jpg);background-repeat: no-repeat; background-position: bottom; height: 250px ">
+ <body class="bodyimg">
+    <div class="headimg">
+
         <p>
-             <h1 style="text-align: center;position: absolute;top: 35%;left: 25%;color:#ee0000;" >Samurai Jack <br>The Warrior </h1>
+           <h1 class="sam tacpsa" >
+             Samurai Jack <br>The Warrior 
+            </h1>
         </p>
-         <p>
-             <h2 style="text-align: center;position: absolute;top: 62%;left: 4%;color:black;" >Rating - 8.5/10</h2>
-         </p>
-          <p>
-            <h2 style="text-align: center;position: absolute;top: 70%;left: 40%;color:black;" >About</h2>
-          </p>
-            <p>
-             <h3 style="text-align: center;position: absolute;top: 75%;left: 40%;color: red;" >When the evil shape-shifting wizard 
-             Aku sends the young samurai Jack into a dystopian future, <br> he must find a portal back to his own time to undo 
-             Aku's destruction and defeat him.
+
+        <p>
+            <h2 class="rating tacpsa" >
+              Rating - 8.5/10
+            </h2>
+        </p>
+
+        <p>
+            <h2 class="about">
+              About
+            </h2>
+        </p>
+
+        <p>
+             <h3 class="para1 tacpsa">
+               When the evil shape-shifting wizard Aku sends the young samurai Jack into a dystopian future,
+              <br> he must find a portal back to his own time to undo Aku's destruction and defeat him.
              </h3>
-            </p>
+        </p>
               
-            <p> <h4 style="text-align: center;position: absolute;top: 87%;left: 5%;color:black;" >
+        <p> 
+             <h4 class="para2 tacpsa" >
                 Samurai Jack is an American action-adventure animated television series created by Genndy Tartakovsky for Cartoon Network.
-                 It follows "Jack", an unnamed[a 1] Japanese samurai who, after nearly defeating the ultimate evil being known as Aku,
-                 using a magic katana capable of cutting through virtually anything, is sent forward in time by him to a dystopian future
+                It follows "Jack", an unnamed[a 1] Japanese samurai who, after nearly defeating the ultimate evil being known as Aku,
+                using a magic katana capable of cutting through virtually anything, is sent forward in time by him to a dystopian future
                 ruled by the tyrannical shape-shifting demon. Jack, who is brought to the future with only his robe, sandals, and the sword, 
                 quests to travel back to his own time and defeat Aku before he can take over the world. Jack's search for a way back to his 
                 own time period transcends Aku's control, but Jack's efforts are largely in vain due to the ways back to his home being just 
                 out of his reach. 
-                </h4>
-            </p>
+             </h4>
+        </p>
           
-        <div style="padding-left: 60px; padding-top: 60px;height: 100px; width: 100px; background-repeat: no-repeat " >
-
-            <img src="https://rzzy0b736k-flywheel.netdna-ssl.com/wp-content/uploads/2016/06/SamuraiJack_Tales_cvr.jpg" height="500px">      
-        
+        <div class="jackimg" >
+          <img src="https://rzzy0b736k-flywheel.netdna-ssl.com/wp-content/uploads/2016/06/SamuraiJack_Tales_cvr.jpg" height="500px">      
         </div>
-
     </div>
-
   </body>
 </html>
